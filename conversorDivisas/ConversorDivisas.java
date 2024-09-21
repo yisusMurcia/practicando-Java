@@ -9,10 +9,10 @@ public class ConversorDivisas {
 
     public ConversorDivisas(double valorDeCambio){
         this.valorDeCambio = valorDeCambio;
-        System.out.println("El valor de cambio entre euros y libras es de " + valorDeCambio);
+        System.out.println(STR."El valor de cambio entre euros y libras es de \{valorDeCambio}");
     }
 
-    public double librasTOEuro(double libras){
+    public double librasToEuro(double libras){
         return  libras/ valorDeCambio;
     }
 
@@ -22,5 +22,9 @@ public class ConversorDivisas {
 
     public void setValorDeCambio(double valorDeCambio) {
         this.valorDeCambio = valorDeCambio;
+    }
+
+    public double getValorDeCambio() {
+        return valorDeCambio;
     }
 }
