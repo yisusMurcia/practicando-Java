@@ -30,7 +30,7 @@ public class Controller {
                     break;
 
                 case 2:
-                    view.displayInventory(restaurant.getNumOfEggs(), restaurant.getGramesOfChorizo(), restaurant.getAmountOfDishes());
+                    view.displayInventory(restaurant.getNumOfEggs(), restaurant.getGramsOfChorizo(), restaurant.getAmountOfDishes());
                     break;
 
                 case 3:

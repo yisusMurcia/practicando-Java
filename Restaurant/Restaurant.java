@@ -24,7 +24,7 @@ public class Restaurant {
         return numOfEggs;
     }
 
-    public double getGramesOfChorizo() {
+    public double getGramsOfChorizo() {
         return gramesOfChorizo;
     }
 

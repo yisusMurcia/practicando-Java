@@ -22,8 +22,8 @@ public class View {
         System.out.println("Enter the amount of kilos of chorizo to add at inventory");
     }
 
-    public void displayInventory(int numOfEggs, double gramesOfChorizos, int dishes){
-        System.out.println(STR."Eggs: \{numOfEggs}\nChorizo: \{gramesOfChorizos} grames\n Dishes: \{dishes}");
+    public void displayInventory(int numOfEggs, double gramsOfChorizos, int dishes){
+        System.out.println(STR."Eggs: \{numOfEggs}\nChorizo: \{gramsOfChorizos} grams\n Dishes: \{dishes}");
     }
 
     public void servePlate(){
