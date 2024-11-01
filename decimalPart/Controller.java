@@ -1,8 +1,8 @@
 package decimalPart;
 
 public class Controller {
-    private View view;
-    private Num num;
+    private final View view;
+    private final Num num;
     private int option;
 
     public Controller(){
