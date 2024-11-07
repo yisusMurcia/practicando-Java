@@ -74,3 +74,9 @@ fraccionaria
 Leer tres números por teclado, X, Y y Z, y decidir si están ordenados de
 menor a mayor. Complétalo con otro método que nos diga si los números,
 además de estar ordenados, son consecutivos.
+
+## Contar cifras
+Determinar el número de cifras de un número entero. El algoritmo debe
+funcionar para números de hasta 5 cifras, considerando los negativos. Por
+ejemplo, si se introduce el número 5342, la respuesta del programa debe ser
+4. Si se introduce –250, la respuesta debe ser 3.
