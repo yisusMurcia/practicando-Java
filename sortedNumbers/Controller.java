@@ -1,14 +1,12 @@
 package sortedNumbers;
 
 public class Controller {
-    private final Nums nums;
-    private int option;
-    private View view;
 
     public Controller(){
-        view = new View();
-        nums = new Nums(view.setNums());
+        View view = new View();
+        Nums nums = new Nums(view.setNums());
 
+        int option;
         do {
             view.displayMenu();
             option = view.getOption();
