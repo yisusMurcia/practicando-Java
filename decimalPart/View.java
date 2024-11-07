@@ -39,6 +39,7 @@ public class View {
             num = scan.nextDouble();
         }catch (InputMismatchException e){
             System.out.println("Something goes wrong, try again");
+            scan.nextLine();
             num = getOption();
         }
 
