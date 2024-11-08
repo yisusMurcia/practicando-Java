@@ -70,13 +70,19 @@ divisible entre 400, también resulta bisiesto.
 Averiguar si un número real introducido por teclado tiene o no parte
 fraccionaria
 
-## Números ordenados
+## Sorted numbers
 Leer tres números por teclado, X, Y y Z, y decidir si están ordenados de
 menor a mayor. Complétalo con otro método que nos diga si los números,
 además de estar ordenados, son consecutivos.
 
-## Contar cifras
+## num of digits
 Determinar el número de cifras de un número entero. El algoritmo debe
 funcionar para números de hasta 5 cifras, considerando los negativos. Por
 ejemplo, si se introduce el número 5342, la respuesta del programa debe ser
 4. Si se introduce –250, la respuesta debe ser 3.
+
+## evens between nums
+Escribe un programa que muestre todos los
+números pares entre A y B, siendo estos dos valores dos números
+introducidos por teclado. A debe ser menor que B, claro. En caso contrario, el
+programa debe avisarnos, pero con cariño.
