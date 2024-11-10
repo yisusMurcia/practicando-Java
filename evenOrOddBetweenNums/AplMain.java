@@ -1,4 +1,4 @@
-package evensBetweenNums;
+package evenOrOddBetweenNums;
 
 public class AplMain {
     public static void main(String[] args){

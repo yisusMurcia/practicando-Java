@@ -1,4 +1,4 @@
-package evensBetweenNums;
+package evenOrOddBetweenNums;
 
 import java.util.InputMismatchException;
 import java.util.List;
@@ -17,6 +17,7 @@ public class View {
         System.out.println("""
                 1. Set nums.
                 2. Get even numbers
+                3. Get odd numbers
                 \t0. Exit""");
     }
 
@@ -44,15 +45,19 @@ public class View {
         return num;
     }
 
-    public void displayEvenNums(List<Integer> evenNums){
+    public void displayNums(List<Integer> nums){
         System.out.println("The nums are:");
-        for (int num : evenNums){
+        for (int num : nums){
             System.out.println(STR."# \{num}");
         }
     }
 
     public void alertNoEvenNums(int startNum, int finalNum){
         System.out.println(STR."Sorry honey, but there isn´t even nums between \{startNum} and \{finalNum}");
+    }
+
+    public void alertNoOddNums(int startNum, int finalNum){
+        System.out.println(STR."Sorry honey, but there isn´t odd nums between \{startNum} and \{finalNum}");
     }
 
     public void sayGoodbye(){

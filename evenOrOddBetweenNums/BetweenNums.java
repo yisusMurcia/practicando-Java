@@ -1,4 +1,4 @@
-package evensBetweenNums;
+package evenOrOddBetweenNums;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,6 +15,14 @@ public class BetweenNums {
     public List<Integer> getEvenNumsBetween(){
          List<Integer> nums = new ArrayList<>();
         for (int i = (startNum % 2 == 0? startNum: startNum + 1); i <= finalNum; i+= 2){//Iniciar por números pares
+            nums.add(i);
+        }
+        return nums;
+    }
+
+    public List<Integer> getOddNumsBetween(){
+        List<Integer> nums = new ArrayList<>();
+        for (int i = (startNum % 2 != 0? startNum: startNum + 1); i <= finalNum; i+= 2){//Iniciar por números impares
             nums.add(i);
         }
         return nums;
