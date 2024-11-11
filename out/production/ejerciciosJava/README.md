@@ -78,11 +78,14 @@ además de estar ordenados, son consecutivos.
 ## num of digits
 Determinar el número de cifras de un número entero. El algoritmo debe
 funcionar para números de hasta 5 cifras, considerando los negativos. Por
-ejemplo, si se introduce el número 5342, la respuesta del programa debe ser
-4. Si se introduce –250, la respuesta debe ser 3.
+ejemplo, si se introduce el número 5342, la respuesta del programa debe ser 4. Si se introduce –250, la respuesta debe ser 3.
 
-## evens between nums
-Escribe un programa que muestre todos los
-números pares entre A y B, siendo estos dos valores dos números
-introducidos por teclado. A debe ser menor que B, claro. En caso contrario, el
-programa debe avisarnos, pero con cariño.
+## even or odds between nums
+Escribe un programa que pregunte al usuario si desea ver los números pares o
+impares y que, dependiendo de la respuesta, muestre en la pantalla los
+números pares o impares entre A y B. Cualquiera de ellos puede ser el mayor.
+
+## multiplication table
+Vamos con un clásico de los cursos de introducción a la programación. El
+usuario teclea un número y el programa muestra la tabla de multiplicar de ese
+número.
