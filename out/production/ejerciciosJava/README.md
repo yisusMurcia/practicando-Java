@@ -89,3 +89,8 @@ números pares o impares entre A y B. Cualquiera de ellos puede ser el mayor.
 Vamos con un clásico de los cursos de introducción a la programación. El
 usuario teclea un número y el programa muestra la tabla de multiplicar de ese
 número.
+
+##  Average 
+Calcular el valor medio de una serie de valores enteros positivos introducidos
+por teclado. Para terminar de introducir valores, el usuario debe teclear un
+número negativo
