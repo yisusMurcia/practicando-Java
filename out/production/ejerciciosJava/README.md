@@ -94,3 +94,15 @@ número.
 Calcular el valor medio de una serie de valores enteros positivos introducidos
 por teclado. Para terminar de introducir valores, el usuario debe teclear un
 número negativo
+
+## Class notes
+El usuario de este programa será un profesor, que introducirá las notas de sus
+30 alumnos de una en una. El algoritmo debe decirle cuántos suspensos y
+cuántos aprobados hay. Las notas pueden valer entre 1 y 10, y el programa no
+debe aceptar valores fuera de ese rango, se toma que se pasa con una nota mayor o igual a 5.
+
+## Factorial
+Calcular el factorial de un número entero N. Recuerda que el factorial de un
+número es el producto de ese número por todos los enteros menores que él.
+Por ejemplo, el factorial de 5 (simbolizado 5!) se calcula como: 5! = 5 x 4 x 3
+x 2 x 1

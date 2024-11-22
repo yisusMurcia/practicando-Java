@@ -100,3 +100,9 @@ El usuario de este programa será un profesor, que introducirá las notas de sus
 30 alumnos de una en una. El algoritmo debe decirle cuántos suspensos y
 cuántos aprobados hay. Las notas pueden valer entre 1 y 10, y el programa no
 debe aceptar valores fuera de ese rango, se toma que se pasa con una nota mayor o igual a 5.
+
+## Factorial
+Calcular el factorial de un número entero N. Recuerda que el factorial de un
+número es el producto de ese número por todos los enteros menores que él.
+
+ATENCIÓN: No calcules números muy grandes, podrías dañar tu dispositivo
