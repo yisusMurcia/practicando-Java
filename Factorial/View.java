@@ -1,5 +1,6 @@
 package Factorial;
 
+import java.math.BigInteger;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -15,15 +16,15 @@ public class View {
     public void displayMenu(){
         System.out.println("""
                 1. Get factorial
-                2. Exit""");
+                \t0. Exit""");
     }
 
-    public int getNum() {
+    public BigInteger getNum() {
         System.out.println("Please enter a positive num");
-        int num;
+        BigInteger num;
         try {
-            num = scan.nextInt();
-        }catch (InputMismatchException e){
+            num = new BigInteger(scan.next());
+        }catch (NumberFormatException e){
             scan.next();
             System.out.println("Something go wrong, please try again");
             num = getNum();
@@ -46,7 +47,7 @@ public class View {
         System.out.println("This num isn´t valid");
     }
 
-    public void displayFactorialNum(int num, int factorial){
+    public void displayFactorialNum(BigInteger num, BigInteger factorial){
         System.out.println(STR."\{num}! = \{factorial}");
     }
 

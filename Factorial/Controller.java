@@ -1,5 +1,7 @@
 package Factorial;
 
+import java.math.BigInteger;
+
 public class Controller {
     private final View view;
 
@@ -15,41 +17,37 @@ public class Controller {
 
             switch (option){
                 case 1:
-                    displayFactorialInView(getPositveNum());
+                    displayFactorialInView(getPositiveNum());
                     break;
                 case 0:
                     view.sayGoodbye();
                     break;
                 default:
                     view.alertNotValidOption();
-            }
-        }while (option != 0);
+        }
+    }while (option != 0);
 
     }
 
-    private void displayFactorialInView(int num){
+    private void displayFactorialInView(BigInteger num){
+        BigInteger factorial = num;
+        if (num.intValue() == 0){
+            factorial = new BigInteger("1");
+        }
         try {
-            view.displayFactorialNum(num, getFactorial(num));
+            for (int i = 1; i < num.intValue(); i++){
+                factorial = factorial.multiply(BigInteger.valueOf(i));
+            }
+            view.displayFactorialNum(num, factorial);
         }catch (StackOverflowError e){
             view.alertPossibleBlowUp();
         }
     }
 
-    private int getFactorial(int num){
-        if(num < 2){
-            return 1;//De una vez se valida que 0! = 1
+    private BigInteger getPositiveNum(){
+        BigInteger num = view.getNum();
 
-        }else {
-            num = num * getFactorial(num - 1);
-        }
-
-        return  num;
-    }
-
-    private int getPositveNum(){
-        int num = view.getNum();
-
-        while (num < 0){
+        while (num.intValue() < 0){
             view.alertNotValidNum();
             num = view.getNum();
         }
