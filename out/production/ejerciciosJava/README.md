@@ -104,5 +104,10 @@ debe aceptar valores fuera de ese rango, se toma que se pasa con una nota mayor 
 ## Factorial
 Calcular el factorial de un número entero N. Recuerda que el factorial de un
 número es el producto de ese número por todos los enteros menores que él.
-Por ejemplo, el factorial de 5 (simbolizado 5!) se calcula como: 5! = 5 x 4 x 3
-x 2 x 1
+
+ATENCIÓN: No calcules números muy grandes, podrías dañar tu dispositivo
+
+## FIBONACCI
+escribe un programa que muestre en la pantalla los N
+primeros términos de la sucesión de Fibonacci, siendo N un número entero
+introducido por el usuario.
