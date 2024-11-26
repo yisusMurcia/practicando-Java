@@ -9,12 +9,13 @@ public class View {
 
     public View(){
         scan = new Scanner(System.in);
-        System.out.println("Welcome, this code allows you to get a Fibonaaci number");
+        System.out.println("Welcome, this code allows you to get a Fibonacci number");
     }
 
     public void displayMenu(){
         System.out.println("""
-                Option 1: Get fibonacci num
+                Option 1: Get fibonacci series
+                Option 2: Get a fibonacci num
                 \tOption 0: Exit""");
     }
 
@@ -57,8 +58,12 @@ public class View {
         System.out.println("This isn´t a valid option");
     }
 
-    public void displayFibonacciNum(int position, List<Integer> fibonacciNum){
+    public void displayFibonacciList(int position, List<Integer> fibonacciNum){
         System.out.println(STR."The numbers until the position \{position} are: \{fibonacciNum}");
+    }
+
+    public void displayFibonacciNum(int position, int num){
+        System.out.println(STR."The number in the position \{position} of the fibonnaci series is: \{num}");
     }
 
     public void alertInvalidPosition(){

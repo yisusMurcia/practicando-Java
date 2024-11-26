@@ -17,7 +17,10 @@ public class Controller {
 
             switch (option){
                 case 1:
-                    displayFibonacciPosition();
+                    displayFibonacciList();
+                    break;
+                case 2:
+                    displayFibonacciInPosition();
                     break;
                 case 0:
                     view.sayGoodbye();
@@ -39,8 +42,13 @@ public class Controller {
         return position;
     }
 
-    private void displayFibonacciPosition(){
+    private void displayFibonacciInPosition(){
         int position = validatePosition();
-        view.displayFibonacciNum(position, fibonacci.getItem(position));
+        view.displayFibonacciNum(position, fibonacci.getItemNum(position));
+    }
+
+    private void displayFibonacciList(){
+        int position = validatePosition();
+        view.displayFibonacciList(position, fibonacci.getItemList(position));
     }
 }

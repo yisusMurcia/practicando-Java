@@ -12,12 +12,14 @@ public class Fibonacci {
         fibonacciSeries.add(1);
     }
 
-    public List<Integer> getItem(int position){
-        List<Integer> num;
+    public List<Integer> getItemList(int position){
         expandFibonacciSeries(position);
-        num = fibonacciSeries.subList(0, position);
+        return fibonacciSeries.subList(0, position);
+    }
 
-        return num;
+    public int getItemNum(int position){
+        expandFibonacciSeries(position);
+        return fibonacciSeries.get(position -1);
     }
 
     private void expandFibonacciSeries(int index){
