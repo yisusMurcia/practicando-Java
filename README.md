@@ -119,3 +119,11 @@ operación. Por ejemplo, si A = 5 y B = 2, y operación = "+", el resultado debe
 ser 7. El algoritmo debe seguir pidiendo números y operaciones
 indefinidamente, hasta que el usuario decida terminar (utiliza un valor
 centinela para ello)
+
+## Math
+Crea un paquete con dos clases llamadas Sumar
+y Potenciar.
+La clase Sumar tendrá un método suma(int, int), sobrecargado como
+suma(double, double) para poder sumar números reales. La clase Potenciar
+tendrá un método potencia(int, int) sobrecargado como potencia (double, int),
+donde el primer parámetro será la base y el segundo el exponente.
