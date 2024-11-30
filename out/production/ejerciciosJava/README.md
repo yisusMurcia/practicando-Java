@@ -119,3 +119,52 @@ operación. Por ejemplo, si A = 5 y B = 2, y operación = "+", el resultado debe
 ser 7. El algoritmo debe seguir pidiendo números y operaciones
 indefinidamente, hasta que el usuario decida terminar (utiliza un valor
 centinela para ello)
+
+## Math
+Crea un paquete con dos clases llamadas Sumar
+y Potenciar.
+La clase Sumar tendrá un método suma(int, int), sobrecargado como
+suma(double, double) para poder sumar números reales. La clase Potenciar
+tendrá un método potencia(int, int) sobrecargado como potencia (double, int),
+donde el primer parámetro será la base y el segundo el exponente.
+
+## Geometric inheritance
+![img.png](img.png)
+
+1) Escribir la superclase Figura (figura geométrica), que contendrá:
+   Dos atributos de instancia: color (String) y relleno (boolean).
+   Dos constructores: uno sin argumentos que inicializará el color a "rojo"
+   y relleno a true; y otro que recibirá dos argumentos para inicializar los
+   atributos.
+   Getters y setters.
+   Sobreescritura del método toString() de Object para devolver la cadena:
+   "Soy una figura de color xxx y rellena/no rellena".
+2) Escribe una clase que compruebe que los métodos de Figura funcionan.
+3) Escribe dos subclases de Figura llamadas Círculo y Rectángulo. La clase
+   Circle contendrá:
+   Una variable llamada radio (double).
+   Tres constructores, como se ve en el diagrama de clases.
+   El constructor
+   sin argumentos establecerá el radio en 1.
+   Getter y setter para el radio.
+   Los métodos getArea() y getPerimetro(). Si no recuerdas como calcular
+   el área y el perímetro (o circunferencia) de un círculo… bueno, tal vez
+   necesites tomar algo para mejorar tu memoria. En cualquier caso, ¿para
+   qué está la wikipedia?
+   Sobreescribe el método toString() heredado de Figura. Ahora, el método
+   devolverá: "Soy un círculo con radio = x, esta es mi superclase: yyy",
+   donde yyy es la salida del método toString() de la superclase de Círculo.
+4) La clase Rectángulo se comportará igual, con las lógicas diferencias en
+   atributos y métodos getters y setters. Mira el diagrama de clases si tienes
+   alguna duda.
+5) Escribe una clase llamada Cuadrado como subclase de Rectángulo. Esta
+   clase podía haberse modelado como subclase de Figura, pero es más cómodo
+   hacerlo como subclase de Rectángulo porque podemos aprovechar casi todo
+   el código de su superclase
+   Además de crear el constructor, sobreescribe, como en los otros casos,
+   el método toString().
+   Atención, pregunta: ¿necesitarás sobreescribir getArea() y
+   getPerimetro(), o funcionarán tal y como han sido heredados de
+   Rectángulo? Haz la prueba a ver qué pasa...
+   Sobreescribe los setters setAlto() and setAncho() para evitar que el largo
+   y el ancho del cuadrado puedan tener dimensiones diferentes.
