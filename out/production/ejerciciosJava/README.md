@@ -168,3 +168,17 @@ donde el primer parámetro será la base y el segundo el exponente.
    Rectángulo? Haz la prueba a ver qué pasa...
    Sobreescribe los setters setAlto() and setAncho() para evitar que el largo
    y el ancho del cuadrado puedan tener dimensiones diferentes.
+
+## Teacher
+Crea una clase Profesor con los atributos nombre y sueldo y los getters y
+setters correspondientes.
+Crea luego una subclase Rector. Los directores cobran un 25% más aunque
+realicen el mismo trabajo. Sobreescribe el método getSueldo() en Rector y
+comprueba que funciona
+
+##  Figures
+Implementa una jerarquía de clases constituida por una clase Forma
+(abstracta) de la que hereden Circulo, Cuadrado, Triangulo y Rombo.
+La clase Forma tendrá un método abstracto toString() y otro identidad(), que
+mostrará un identificador interno del objeto. Las demás clases heredarán de
+Forma e implementarán el método abstracto toString()
