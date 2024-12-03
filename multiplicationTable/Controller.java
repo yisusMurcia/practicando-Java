@@ -10,15 +10,20 @@ public class Controller implements ActionListener {
     public Controller(){
         view = new View(this);
         multiplicationTable = new MultiplicationTable(0);
-
     }
+    
 
     @Override
     public void actionPerformed(ActionEvent e) {
         if("setNum".equals(e.getActionCommand())){
-            multiplicationTable.setNum(view.getNum());
+            int num = view.getNum();
+            if(view.isValidValue()){
+                multiplicationTable.setNum(num);
+                view.displayMultiplicationTAble(multiplicationTable.getNum(), multiplicationTable.getMultiplicationTable());
+            }else{
+                view.alertError();
+            }
 
-            view.displayMultiplicationTAble(multiplicationTable.getNum(), multiplicationTable.getMultiplicationTable());
 
         }
     }
